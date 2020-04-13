@@ -1,0 +1,14 @@
+<!--<ion-content>-->
+  <!--<ion-button (click)="toggleInfiniteScroll()" expand="block">
+    Toggle Infinite Scroll
+  </ion-button>-->
+<ion-item *ngFor="let image of imgData ;trackBy:trackByMethod">
+  <ion-img [src]="image.src"></ion-img>
+</ion-item>
+  <ion-infinite-scroll (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="加载数据中...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+<!--</ion-content>-->

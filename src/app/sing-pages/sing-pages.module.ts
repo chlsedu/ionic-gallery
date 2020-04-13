@@ -8,6 +8,7 @@ import {SingPagesPageRoutingModule} from './sing-pages-routing.module';
 
 import {SingPagesPage} from './sing-pages.page';
 import {SlogoDetailComponent} from './slogo-detail/slogo-detail.component';
+import {SlideDetailComponent} from './slide-detail/slide-detail.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import {SlogoDetailComponent} from './slogo-detail/slogo-detail.component';
     SingPagesPageRoutingModule
   ],
   declarations: [SingPagesPage,
-    SlogoDetailComponent]
+    SlogoDetailComponent, SlideDetailComponent]
 })
 export class SingPagesPageModule {
 }

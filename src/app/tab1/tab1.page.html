@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button menu="first"></ion-menu-button>
@@ -9,7 +9,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" containerTab1>
   <ion-img [src]="slogo.src" [routerLink]="['/sing-pages/slogo']"></ion-img>
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <app-slide></app-slide>
+  <app-home></app-home>
+  <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
+  <!-- fab placed to the bottom end -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-up-circle-outline" (click)="scrollToTop()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

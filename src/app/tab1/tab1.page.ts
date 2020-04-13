@@ -15,4 +15,8 @@ export class Tab1Page implements OnInit {
     this.slogo.src = 'assets/img/slogo.jpg';
   }
 
+  scrollToTop() {
+    // @ts-ignore
+    document.querySelector('ion-content[containerTab1]').scrollToTop(500);
+  }
 }

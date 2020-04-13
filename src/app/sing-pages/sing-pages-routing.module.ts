@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {SlogoDetailComponent} from './slogo-detail/slogo-detail.component';
+import {SlideDetailComponent} from './slide-detail/slide-detail.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
       }
     ]
   },
+  {path: 'slide', component: SlideDetailComponent},
   {path: 'slogo', component: SlogoDetailComponent},
 ];
 
