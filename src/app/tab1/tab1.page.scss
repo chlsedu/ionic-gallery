@@ -1,8 +1,11 @@
-ion-content ion-toolbar {
+/*ion-content ion-toolbar, ion-header ion-toolbar {
   --background: translucent;
+}*/
+.hide-selector{
+  display: none;
 }
-ion-fab-button{
-  --background:grey;
+ion-fab-button {
+  --background: grey;
   width: 50px;
   height: 50px;
 }

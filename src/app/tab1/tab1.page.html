@@ -1,4 +1,5 @@
-<ion-header>
+<!--<ion-header [translucent]="true">-->
+<ion-header [class.hide-selector]="hideHeader">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button menu="first"></ion-menu-button>
@@ -9,7 +10,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" containerTab1>
+<ion-content [fullscreen]="true" containerTab1 [scrollEvents]="true" (ionScroll)="onScroll($event)">
   <ion-img [src]="slogo.src" [routerLink]="['/sing-pages/slogo']"></ion-img>
   <app-slide></app-slide>
   <app-home></app-home>

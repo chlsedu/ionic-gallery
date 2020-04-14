@@ -71,4 +71,12 @@ export class HomeComponent implements OnInit {
     // return el.id;
     return index;
   }
+
+  doRefresh(event) {
+    console.log('Begin async operation');
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
+  }
 }
