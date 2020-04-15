@@ -1,0 +1,15 @@
+<ion-row>
+  <ion-col *ngFor="let image of imgData ;trackBy:trackByMethod">
+    <ion-item lines="none">
+      <!--<img [src]="image.src"/>-->
+      <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-list']">
+        <!--<img [src]="image.src">-->
+        <ion-img [src]="image.src"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2>H2 Title</h2>
+        <p>Button on on</p>
+      </ion-label>
+    </ion-item>
+  </ion-col>
+</ion-row>

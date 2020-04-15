@@ -15,3 +15,42 @@
     }
   }
 }*/
+ion-col {
+  padding: 0;
+  text-align: center;
+}
+
+ion-item {
+  display: inline-block;
+  //width: 50%;
+  --padding-start: 10px;
+  --inner-padding-end: 10px;
+  border: 1px #e9e9e9 solid;
+  margin-left: 0px;
+  border-radius: 3px;
+}
+
+ion-thumbnail {
+  width: 70px;
+  height: 70px;
+  margin-inline-end: 10px;
+}
+
+@custom-media ---xs (min-width: var(--ion-grid-width-xs));
+@custom-media ---md (min-width: var(--ion-grid-width-md));
+@custom-media ---lg (min-width: var(--ion-grid-width-lg));
+@custom-media ---xl (min-width: var(--ion-grid-width-xl));
+
+@media (---xs) {
+
+
+}
+
+ion-checkbox {
+  --border-radius: 0%;
+  --size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+

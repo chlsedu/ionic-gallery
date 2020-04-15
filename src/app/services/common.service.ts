@@ -8,6 +8,25 @@ export class CommonService {
   constructor() {
   }
 
+  public onScroll($event: CustomEvent, hideHeaderObj) {
+    if ($event && $event.detail && $event.detail.scrollTop) {
+      const scrollTop = $event.detail.scrollTop;
+      hideHeaderObj.hideHeader = scrollTop >= 225;
+
+      if (hideHeaderObj.hideHeader) {
+        window.scrollTo(0, 1);
+      } else {
+        window.scrollTo(0, 0);
+      }
+    }
+  }
+
+
+  public scrollToTop(property: string = '') {
+    // @ts-ignore
+    document.querySelector(`ion-content[${property}]`).scrollToTop(500);
+  }
+
   public static toggleFullScreen(full: boolean = true): void {
     const doc = window.document;
     const docEl = doc.documentElement;

@@ -1,22 +1,16 @@
-<!--<ion-header [translucent]="true">-->
 <ion-header [class.hide-selector]="hideHeaderObj.hideHeader">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button menu="first"></ion-menu-button>
+      <ion-back-button defaultHref="/" [text]="gConst.iconBack.text"></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title>biz-item</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true" containerTab1 [scrollEvents]="true"
              (ionScroll)="commonService.onScroll($event,hideHeaderObj)">
-  <ion-img [src]="slogo.src" [routerLink]="['/sing-pages/slogo']"></ion-img>
-  <app-slide></app-slide>
-  <app-home></app-home>
-  <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
-  <!-- fab placed to the bottom end -->
+  <p>
+    slide-detail works!
+  </p>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button class="scrollToTopIonFab">
       <ion-icon name="arrow-up-circle-outline" (click)="commonService.scrollToTop('containerTab1')"></ion-icon>

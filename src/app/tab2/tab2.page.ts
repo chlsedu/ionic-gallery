@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {PhotoService} from '../services/photo.service';
+// import {PhotoService} from '../services/photo.service';
 
 @Component({
   selector: 'app-tab2',
@@ -9,11 +9,17 @@ import {PhotoService} from '../services/photo.service';
 })
 export class Tab2Page implements OnInit {
 
-  constructor(public photoService: PhotoService) {
+  /*constructor(public photoService: PhotoService) {
   }
 
   ngOnInit() {
     this.photoService.loadSaved();
+  }*/
+
+  constructor() {
+  }
+
+  ngOnInit() {
   }
 
 }

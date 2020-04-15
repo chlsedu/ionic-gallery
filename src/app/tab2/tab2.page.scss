@@ -1,3 +1,32 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+ion-thumbnail {
+  width: 70px;
+  height: 70px;
+  margin-inline-end: 10px;
+}
+
+ion-checkbox {
+  --border-radius: 0%;
+  --size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+ion-item {
+  --padding-end: 0px;
+  --inner-padding-end: 0px;
+  //--highlight-color-focused: none !important;
+}
+
+
+.noBorder {
+  display: inline-block;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --inner-padding-end: 0px;
+  margin: 0;
+}

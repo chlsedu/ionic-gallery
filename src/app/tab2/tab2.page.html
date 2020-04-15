@@ -1,23 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button menu="first"></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Photo Gallery
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-toolbar>
+  <!--<ion-searchbar placeholder="搜索服务" style="padding-top: 10px;"></ion-searchbar>-->
+  <ion-searchbar placeholder="搜索服务"></ion-searchbar>
+</ion-toolbar>
 
-  <app-explore-container name="Photo Gallery page"></app-explore-container>
+<ion-content>
+
+  <!--<app-explore-container name="Photo Gallery page"></app-explore-container>
 
   <ion-grid>
     <ion-row>
       <ion-col size="6"
                *ngFor="let photo of photoService.photos; index as position">
-        <!--<ion-img src="{{ photo.webviewPath }}"></ion-img>-->
+        &lt;!&ndash;<ion-img src="{{ photo.webviewPath }}"></ion-img>&ndash;&gt;
         <ion-img src="{{ photo.base64? photo.base64 : photo.webviewPath }}"></ion-img>
       </ion-col>
     </ion-row>
@@ -27,5 +22,171 @@
     <ion-fab-button (click)="photoService.addNewToGallery()">
       <ion-icon name="camera"></ion-icon>
     </ion-fab-button>
-  </ion-fab>
+  </ion-fab>-->
+
+  <app-category *ngIf="false"></app-category>
+
+  <ng-template [ngIf]="true">
+    <!-- List of Text Items -->
+    <ion-list>
+      <ion-list-header>
+        搜索结果
+      </ion-list-header>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <h2>Finn</h2>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (2).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Han</h2>
+          <h3>Look, kid...</h3>
+          <p>I've got enough on my plate as it is, and I...</p>
+        </ion-label>
+        <ion-item slot="end" class="noBorder" lines="none">
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-item>
+    </ion-list>
+  </ng-template>
+
 </ion-content>

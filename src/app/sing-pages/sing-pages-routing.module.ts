@@ -17,6 +17,10 @@ const routes: Routes = [
   },
   {path: 'slide', component: SlideDetailComponent},
   {path: 'slogo', component: SlogoDetailComponent},
+  {
+    path: 'biz-item',
+    loadChildren: () => import('./biz-item/biz-item.module').then( m => m.BizItemPageModule)
+  },
 ];
 
 @NgModule({
