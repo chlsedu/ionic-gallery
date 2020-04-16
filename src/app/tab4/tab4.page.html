@@ -1,9 +1,93 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar>
+  <!--<ion-searchbar placeholder="搜索服务" style="padding-top: 10px;"></ion-searchbar>-->
+  <ion-searchbar placeholder="搜索服务"></ion-searchbar>
+</ion-toolbar>
 
 <ion-content>
+
+  <!--<app-explore-container name="Photo Gallery page"></app-explore-container>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6"
+               *ngFor="let photo of photoService.photos; index as position">
+        &lt;!&ndash;<ion-img src="{{ photo.webviewPath }}"></ion-img>&ndash;&gt;
+        <ion-img src="{{ photo.base64? photo.base64 : photo.webviewPath }}"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="photoService.addNewToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>-->
+
+  <ng-template [ngIf]="true">
+    <!-- List of Text Items -->
+    <ion-list>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p>2020/04/08</p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+        <i [ngClass]="{'red-dot-bottom-right':true}"></i>
+      </ion-item>
+
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p>2020/04/08</p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+        <i [ngClass]="{'red-dot-bottom-right':true}"></i>
+      </ion-item>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p>2020/04/08</p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+        <i [ngClass]="{'red-dot-bottom-right':true}"></i>
+      </ion-item>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p>2020/04/08</p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+        <i [ngClass]="{'red-dot-bottom-right':true}"></i>
+      </ion-item>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p>2020/04/08</p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+        <i [ngClass]="{'red-dot-bottom-right':true}"></i>
+      </ion-item>
+    </ion-list>
+  </ng-template>
 
 </ion-content>

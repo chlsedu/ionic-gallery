@@ -4,14 +4,43 @@
 </ion-button>-->
 
 <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
-  <ion-refresher-content
+  <!--<ion-refresher-content
     pullingIcon="arrow-dropdown"
-    refreshingSpinner="circles">
+    refreshingSpinner="circles">-->
+    <ion-refresher-content>
   </ion-refresher-content>
 </ion-refresher>
 <ion-row>
+  <ion-col>
+    <ion-item lines="none" class="ionItem">
+      <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+        <ion-img src="assets/img/xqpt.png"></ion-img>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-col>
+  <ion-col>
+    <ion-item lines="none" class="ionItem">
+      <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+        <ion-img src="assets/img/jjmh.png"></ion-img>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-col>
+  <ion-col>
+    <ion-item lines="none" class="ionItem">
+      <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+        <ion-img src="assets/img/xxjs.png"></ion-img>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-col>
+  <ion-col>
+    <ion-item lines="none" class="ionItem">
+      <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+        <ion-img src="assets/img/jkys.png"></ion-img>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-col>
   <ion-col *ngFor="let image of imgData ;trackBy:trackByMethod">
-    <ion-item lines="none">
+    <ion-item lines="none" class="ionItem">
       <!--<img [src]="image.src"/>-->
       <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
         <!--<img [src]="image.src">-->

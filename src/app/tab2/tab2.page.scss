@@ -8,18 +8,14 @@ ion-thumbnail {
   margin-inline-end: 10px;
 }
 
-ion-checkbox {
-  --border-radius: 0%;
-  --size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: inline-block;
-}
 
 ion-item {
   --padding-end: 0px;
   --inner-padding-end: 0px;
-  //--highlight-color-focused: none !important;
+}
+
+.ion-activated {
+
 }
 
 
@@ -29,4 +25,13 @@ ion-item {
   --padding-end: 10px;
   --inner-padding-end: 0px;
   margin: 0;
+}
+
+
+ion-checkbox {
+  --border-radius: 0%;
+  --size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
 }

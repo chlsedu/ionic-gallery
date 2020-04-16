@@ -1,0 +1,42 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+ion-thumbnail {
+  width: 70px;
+  height: 70px;
+  margin-inline-end: 10px;
+}
+
+
+ion-item {
+  --padding-end: 0px;
+  --inner-padding-end: 0px;
+}
+
+.ion-activated {
+
+}
+
+
+.noBorder {
+  display: inline-block;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --inner-padding-end: 0px;
+  margin: 0;
+}
+
+.headerInner {
+
+}
+
+.headerInner h2 {
+  float: left;
+}
+
+.headerInner p {
+  float: right;
+  margin-right: 10px;
+  font-size: 13px
+}
