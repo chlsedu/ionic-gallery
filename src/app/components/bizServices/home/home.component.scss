@@ -37,27 +37,67 @@ ion-thumbnail {
 }
 
 .ionItem {
-  width: 188px;
+  //width: 170px;
   //height: 108px;
   overflow: hidden;
 }
 
 .ionThumbnailCategory {
-  width: 170px;
-  height: 90px;
-  //padding: 6px 0px;
+  width: 100%;
+  margin: 5px 0px;
   -webkit-margin-end: 10px;
   margin-inline-end: 0px;
 }
 
-@custom-media ---xs (min-width: var(--ion-grid-width-xs));
-@custom-media ---md (min-width: var(--ion-grid-width-md));
-@custom-media ---lg (min-width: var(--ion-grid-width-lg));
-@custom-media ---xl (min-width: var(--ion-grid-width-xl));
+@media screen and (min-width: 320px) {
+  .ionItem {
+    width: 310px;
+  }
+  .ionThumbnailCategory {
+    width: 100%;
+  }
+}
 
-@media (---xs) {
+@media screen and (min-width: 360px) {
+  .ionItem {
+    width: 175px;
+  }
+}
 
+@media screen and (min-width: 375px) {
+  .ionItem {
+    width: 182px;
+  }
+}
 
+@media screen and (min-width: 384px) {
+  .ionItem {
+    width: 190px;
+  }
+}
+
+@media screen and (min-width: 411px) {
+  .ionItem {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .ionItem {
+    width: 203px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .ionItem {
+    width: 235px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ionItem {
+    width: 250px;
+  }
 }
 
 ion-checkbox {

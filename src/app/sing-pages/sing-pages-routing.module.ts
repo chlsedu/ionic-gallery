@@ -19,7 +19,11 @@ const routes: Routes = [
   {path: 'slogo', component: SlogoDetailComponent},
   {
     path: 'biz-item',
-    loadChildren: () => import('./biz-item/biz-item.module').then( m => m.BizItemPageModule)
+    loadChildren: () => import('./biz-item/biz-item.module').then(m => m.BizItemPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
 ];
 

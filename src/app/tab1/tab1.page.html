@@ -13,7 +13,9 @@
 <ion-content [fullscreen]="true" containerTab1 [scrollEvents]="true"
              (ionScroll)="commonService.onScroll($event,hideHeaderObj)">
   <ion-img [src]="slogo.src" [routerLink]="['/sing-pages/slogo']"></ion-img>
-  <app-slide></app-slide>
+  <ion-col style="display: block;padding: 7px 0;">
+    <app-slide></app-slide>
+  </ion-col>
   <app-home></app-home>
   <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
   <!-- fab placed to the bottom end -->

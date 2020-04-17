@@ -1,8 +1,9 @@
 .swiper-container {;
-  margin: 10px auto;
+  //margin: 10px auto;
 }
+
 .swiper-slide {
-  display: block;
+  //display: block;
 }
 
 ion-slide > h2 {
@@ -10,6 +11,7 @@ ion-slide > h2 {
 }
 
 ion-slide > img {
+  width: 100%;
   /*max-height: 50%;
   max-width: 60%;
   margin: 36px 0;*/
