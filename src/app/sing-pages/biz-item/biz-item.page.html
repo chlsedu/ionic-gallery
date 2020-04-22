@@ -1,19 +1,70 @@
-<ion-header [class.hide-selector]="hideHeaderObj.hideHeader">
+<!--<ion-header [class.hide-selector]="hideHeaderObj.hideHeader">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/" [text]="gConst.iconBack.text"></ion-back-button>
     </ion-buttons>
     <ion-title>biz-item</ion-title>
   </ion-toolbar>
-</ion-header>
-<ion-content [fullscreen]="true" containerTab1 [scrollEvents]="true"
+</ion-header>-->
+<ion-content [fullscreen]="true" containerTab5 [scrollEvents]="true"
              (ionScroll)="commonService.onScroll($event,hideHeaderObj)">
-  <p>
-    slide-detail works!
-  </p>
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button class="scrollToTopIonFab">
-      <ion-icon name="arrow-up-circle-outline" (click)="commonService.scrollToTop('containerTab1')"></ion-icon>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col style="width:100%;">
+        <img src="assets/img/item.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button class="goBack" (click)="goBack()">
+      <p></p>
+      <ion-icon name="arrow-back"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" [class.hide-selector]="!hideHeaderObj.hideHeader"
+           style="bottom: 70px;">
+    <ion-fab-button class="scrollToTopIonFab">
+      <ion-icon name="arrow-up-circle-outline" (click)="commonService.scrollToTop('containerTab5')"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!-- fab placed to the bottom start -->
+  <ion-fab vertical="bottom" slot="fixed" class="ionFab1"
+           style="width: 100%;background: #fff;bottom: 0;border-top: 1px solid #e6e6e6;">
+    <ion-item lines="none" class="no-ripple IonItemBottom">
+      <!--<ion-item slot="start" class="noBorder no-ripple" lines="none" style="padding-left: 10px;">-->
+      <ion-tab-button>
+        <ion-icon name="call-outline"></ion-icon>
+        <ion-label>联系客服</ion-label>
+      </ion-tab-button>
+      <!--</ion-item>-->
+      <ion-tab-button>
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-badge *ngIf="true" color="danger">{{'10'}}</ion-badge>
+        <ion-label>服务车</ion-label>
+      </ion-tab-button>
+      <ion-label>
+        <h2 style="color: red;text-align: center;">￥{{'79.00'}}</h2>
+      </ion-label>
+      <ion-button slot="end" color="danger" style="margin-left: 10px;margin-right: 0px;" class="buttonCheckout">
+        加入购物车
+      </ion-button>
+      <ion-button slot="end" color="yellow" style="margin-left: 15px;margin-right: 0px;" class="buttonCheckout">
+        立即购买
+      </ion-button>
+    </ion-item>
+  </ion-fab>
+
+
 </ion-content>

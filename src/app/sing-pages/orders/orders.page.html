@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" [text]="gConst.iconBack.text"></ion-back-button>
+    </ion-buttons>
+    <ion-title>我的订单</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col style="width:20%;text-align: center" class="activated" (click)="changeClass($event,1)">全部</ion-col>
+      <ion-col style="width:20%;text-align: center" (click)="changeClass($event,2)">待付款</ion-col>
+      <ion-col style="width:20%;text-align: center" (click)="changeClass($event,3)">待完成</ion-col>
+      <ion-col style="width:20%;text-align: center" (click)="changeClass($event,4)">已完成</ion-col>
+      <ion-col style="width:20%;text-align: center" (click)="changeClass($event,5)">已取消</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ng-template [ngIf]="true">
+    <!-- List of Text Items -->
+    <ion-list>
+      <ion-item lines="none" class="no-ripple" (click)="gotoDetail()">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span>已取消</span>
+              <ion-icon (click)="deleteOrder($event,'id')" name="trash-outline" style="margin-left: 10px"></ion-icon>
+            </p>
+          </ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+
+      <ion-item lines="none" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span style="color: red">等待支付</span></p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+      <ion-item lines="none" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span>已完成</span></p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span>待完成</span></p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p>2020/04/08</p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+    </ion-list>
+  </ng-template>
+</ion-content>

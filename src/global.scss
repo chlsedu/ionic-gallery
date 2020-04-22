@@ -22,12 +22,21 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
 *:focus {
   outline: none;
 }
 
 .no-ripple {
   --ripple-color: transparent !important;
+}
+
+.no-click {
+  pointer-events: none;
 }
 
 .hide-selector {
@@ -57,6 +66,10 @@ ion-col {
 
 ion-content {
   //--ion-background-color: #f0f0f0;
+}
+
+.activated {
+  border-bottom: 2px solid #e00000;
 }
 
 /*#container_bizHome {

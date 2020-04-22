@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab3" [text]="gConst.iconBack.text"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      超人收银台
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  class="ion-padding">
+  <ion-row>
+    <ion-col size="12" style="text-align: center;color: red;background: inherit">
+      <h1><span style="font-size: 18px">￥</span><span style="font-weight: 900;">{{'79.00'}}</span></h1>
+    </ion-col>
+  </ion-row>
+  <ion-item lines="none" class="no-ripple" style="margin-top: 20px;">
+    <ion-thumbnail slot="start">
+      <img src="assets/img/wechatPayment.png">
+    </ion-thumbnail>
+    <label><h2>微信</h2></label>
+    <ion-checkbox slot="end" mode="ios" [(ngModel)]="paymethod.isWechat"
+                  (ngModelChange)="selectPayment($event,1)"></ion-checkbox>
+  </ion-item>
+  <ion-item lines="none" class="no-ripple" style="margin-top: 20px;">
+    <ion-thumbnail slot="start">
+      <img src="assets/img/zhifubaoPayment.png">
+    </ion-thumbnail>
+    <label><h2>支付宝</h2></label>
+    <ion-checkbox slot="end" mode="ios" [(ngModel)]="paymethod.isZhifubao"
+                  (ngModelChange)="selectPayment($event,2)"></ion-checkbox>
+  </ion-item>
+  <!-- fab placed to the bottom start -->
+  <ion-fab vertical="bottom" slot="fixed" class="ionFab1" style="width: 100%;background: #fff">
+    <!--<ion-item lines="none" class="no-ripple">-->
+    <ion-button color="red" style="margin-left: 15px;margin-right: 15px;"
+                (click)="payment()" expand="block">
+      微信支付￥{{'79.00'}}
+    </ion-button>
+    <!--</ion-item>-->
+  </ion-fab>
+</ion-content>

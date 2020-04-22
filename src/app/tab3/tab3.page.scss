@@ -19,6 +19,10 @@ ion-item {
   --padding-start: 3px;
   --padding-end: 0px;
   --inner-padding-end: 0px;
+  --background-activated: #fff;
+  --background-activated-opacity: 0;
+  --background-focused-opacity: 0;
+  --background-hover-opacity: 0;
 }
 
 .ion-activated {
@@ -50,4 +54,25 @@ ion-content {
 
 .buttonCheckout {
   --border-radius: 20px;
+}
+
+.quantity {
+  --padding-end: 0px;
+}
+
+.quantity ion-icon, .quantity ion-input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  --padding-top: 0px;
+  --padding-end: 0px;
+  --padding-bottom: 0px;
+}
+
+.quantity p {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
 }

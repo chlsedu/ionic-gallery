@@ -1,0 +1,35 @@
+.goBack {
+  --background: none;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  position: relative;
+}
+
+.goBack p {
+  background: #c5c3c3;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  position: absolute;
+  top: -14px;
+  z-index: 1;
+}
+
+.goBack ion-icon {
+  position: relative;
+  z-index: 2;
+  color: black;
+}
+
+ion-col {
+  background: #ffffff;
+}
+
+.IonItemBottom {
+  --padding-start: 0px;
+}
+
+ion-tab-button {
+  color: #999999;
+}

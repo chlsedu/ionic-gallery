@@ -1,0 +1,65 @@
+ion-col {
+  padding: 20px 0px;
+  background: #fff;
+}
+
+ion-content {
+  --ion-background-color: #f0f0f0;
+  --ion-item-background: #fff;
+}
+
+.ion-color-newcolor {
+  --ion-color-base: #fff;
+}
+
+ion-list {
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+  background: #f0f0f0;
+  margin: 0px 0;
+  padding: 0;
+}
+
+ion-grid {
+  padding: 0;
+}
+
+ion-thumbnail {
+  width: 70px;
+  height: 70px;
+  margin-inline-end: 10px;
+}
+
+
+ion-item {
+  --padding-end: 0px;
+  --inner-padding-end: 0px;
+  margin: 15px 0px;
+}
+
+.ion-activated {
+
+}
+
+
+.noBorder {
+  display: inline-block;
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --inner-padding-end: 0px;
+  margin: 0;
+}
+
+.headerInner {
+
+}
+
+.headerInner h2 {
+  float: left;
+}
+
+.headerInner p {
+  float: right;
+  margin-right: 10px;
+  font-size: 13px
+}

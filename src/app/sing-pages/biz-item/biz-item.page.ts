@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Location} from '@angular/common';
 import {CommonService} from '../../services/common.service';
 import {GlobalConstService} from '../../services/global-const.service';
 
@@ -11,11 +12,15 @@ export class BizItemPage implements OnInit {
   hideHeaderObj = {hideHeader: false};
   gConst: any;
 
-  constructor(public commonService: CommonService, public globalConstService: GlobalConstService) {
+  constructor(public commonService: CommonService, public globalConstService: GlobalConstService, private location: Location) {
     this.gConst = globalConstService.getConst();
   }
 
   ngOnInit() {
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }
