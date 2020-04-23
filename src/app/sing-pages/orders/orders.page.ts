@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {GlobalConstService} from '../../services/global-const.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-orders',
@@ -9,7 +10,7 @@ import {GlobalConstService} from '../../services/global-const.service';
 export class OrdersPage implements OnInit {
   gConst: any;
 
-  constructor(public globalConstService: GlobalConstService) {
+  constructor(public globalConstService: GlobalConstService, private router: Router, private route: ActivatedRoute) {
     this.gConst = globalConstService.getConst();
   }
 
@@ -17,7 +18,7 @@ export class OrdersPage implements OnInit {
   }
 
   gotoDetail() {
-    alert('gotoDetail');
+    this.router.navigate(['order-item'], {relativeTo: this.route});
   }
 
   deleteOrder($event, id) {

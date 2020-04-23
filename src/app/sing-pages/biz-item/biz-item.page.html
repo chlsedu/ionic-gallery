@@ -9,21 +9,100 @@
 <ion-content [fullscreen]="true" containerTab5 [scrollEvents]="true"
              (ionScroll)="commonService.onScroll($event,hideHeaderObj)">
 
-  <ion-grid>
-    <ion-row>
-      <ion-col style="width:100%;">
+  <ion-row>
+    <ion-col style="width:100%;padding: 0px 0px;background: #fff">
+      <div style="font-size:0;">
         <img src="assets/img/item.png">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="background: #fff;margin: 10px 0px;">
+    <ion-col size="12">
+      <ion-text>
+        <h2 style="margin-top: 10px;">服务案列</h2>
+      </ion-text>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory" [routerLink]="['/sing-pages/biz-item']">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <!--<ion-col class="ionCol" *ngFor="let image of imgData ;trackBy:trackByMethod">
+      <ion-item lines="none" class="ionItem">
+        &lt;!&ndash;<img [src]="image.src"/>&ndash;&gt;
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          &lt;!&ndash;<img [src]="image.src">&ndash;&gt;
+          <ion-img [src]="image.src"></ion-img>
+        </ion-thumbnail>
+        <ion-label>
+          <h2>H2 Title</h2>
+          <p>Button on on</p>
+          <ion-checkbox></ion-checkbox>
+        </ion-label>
+      </ion-item>
+    </ion-col>-->
+  </ion-row>
+  <ion-row style="background: #fff;margin-bottom: 65px;">
+    <ion-col size="12">
+      <ion-item detail lines="none" class="ionItem" style="width: 100%;border: none"
+                (click)="presentModalComments()">
+        <label>
+          <h2 style="margin-top: 10px;">服务评价<span style="margin-left: 20px;font-size: 14px">1000条</span></h2>
+        </label>
+        <label slot="end">
+          <span style="margin-left: 20px;font-size: 14px">好评率99%</span>
+        </label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
 
   <ion-fab vertical="top" horizontal="start" slot="fixed">
     <ion-fab-button class="goBack" (click)="goBack()">
@@ -33,7 +112,7 @@
   </ion-fab>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" [class.hide-selector]="!hideHeaderObj.hideHeader"
-           style="bottom: 70px;">
+           style="bottom: 120px;">
     <ion-fab-button class="scrollToTopIonFab">
       <ion-icon name="arrow-up-circle-outline" (click)="commonService.scrollToTop('containerTab5')"></ion-icon>
     </ion-fab-button>
@@ -58,7 +137,7 @@
         <h2 style="color: red;text-align: center;">￥{{'79.00'}}</h2>
       </ion-label>
       <ion-button slot="end" color="danger" style="margin-left: 10px;margin-right: 0px;" class="buttonCheckout">
-        加入购物车
+        加服务车
       </ion-button>
       <ion-button slot="end" color="yellow" style="margin-left: 15px;margin-right: 0px;" class="buttonCheckout">
         立即购买

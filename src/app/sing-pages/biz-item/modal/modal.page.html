@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon slot="start" name="close-outline" (click)="dismiss()" style="font-size: 30px;color: red;"></ion-icon>
+    <ion-title>服务案列</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-slides pager="true" [options]="slideOpts">-->
+  <ion-slides [options]="slideOpts">
+    <ion-slide [routerLink]="['/sing-pages/slide']">
+      <img src="assets/img/slide (1).jpg"/>
+      <h2>What is Ionic Appflow?</h2>
+      <p><b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a
+        totally new level of app development agility to mobile dev teams.</p>
+    </ion-slide>
+    <ion-slide [routerLink]="['/sing-pages/slide']">
+      <img src="assets/img/slide (1).jpg"/>
+      <!--<h2>Welcome</h2>-->
+    </ion-slide>
+    <ion-slide [routerLink]="['/sing-pages/slide']">
+      <img src="assets/img/slide (1).jpg"/>
+      <!--<h2>Welcome</h2>-->
+    </ion-slide>
+  </ion-slides>
+</ion-content>

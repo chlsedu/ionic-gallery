@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon slot="start" name="close-outline" (click)="dismiss()" style="font-size: 30px;color: red;"></ion-icon>
+    <ion-title>服务评价</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row style="background: #fff;margin-bottom: 15px;">
+    <ion-col size="12">
+      <ion-radio-group value="{{bizItem}}">
+        <ion-item *ngFor="let item of bizItems">
+          <ion-label> {{item.name}}</ion-label>
+          <!--<ion-radio slot="start" color="tertiary" value="{{item.id}}"
+                 (ionBlur)="saveAnswer(item.id)">-->
+          <ion-radio slot="start" value="{{item.id}}" (ionFocus)="saveRadio(item.id)">
+          </ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-col>
+    <ion-col size="12">
+      <label>
+        <h3 style="font-size: inherit;">评分：</h3>
+      </label>
+    </ion-col>
+    <ion-col size="12">
+      <label>
+        <h3 style="font-size: inherit;">添加图片：</h3>
+      </label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="background: #fff;margin-bottom: 65px;">
+    <ion-col size="12">
+      <ion-item lines="none" class="ionItem" style="width: 100%;border: none;--min-height: 0px;">
+        <label>
+          <h3 style="font-size: inherit;margin: 0px;">我的评价<span style="margin-left: 20px;font-size: 14px">未评价</span>
+          </h3>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol" size="12">
+      <ion-item lines="none" class="ionItem" style="width: 100%;" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol" size="12">
+      <ion-item lines="none" class="ionItem" style="width: 100%;" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol" size="12">
+      <ion-item lines="none" class="ionItem" style="width: 100%;" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,235 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" [text]="gConst.iconBack.text"></ion-back-button>
+    </ion-buttons>
+    <!--<ion-title>我的订单</ion-title>-->
+    <ion-button slot="end" color="gray" size="small" (click)="presentModalComments()" style="margin-right: 10px;">
+      去评价
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item lines="full" class="no-ripple">
+      <ion-label>
+        <h3><span>订单编号：</span><span>112874947</span></h3>
+        <h3><span>下单日期：</span><span>2020-04-23 14::05:29</span></h3>
+        <h3><span>支付方式：</span><span>微信支付</span></h3>
+        <h3><span>服务项目：</span><span>搬运物品（2次）；打扫卫生（3次）</span></h3>
+        <h3><span>服务总额：</span><span>￥{{'79.00'}}</span></h3>
+        <h3><span>应付款：</span><span>￥{{'79.00'}}</span></h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ng-template [ngIf]="true">
+    <!-- List of Text Items -->
+    <ion-list>
+      <ion-item lines="none" class="no-ripple" (click)="gotoBizItem()">
+        <ion-thumbnail slot="start">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span style="color: red">已完成</span>
+            </p>
+          </ion-label>
+          <h3>完成日期：2020/04/08</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+
+      <ion-item lines="none" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span style="color: red">已完成</span></p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+      <ion-item lines="none" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span>已完成</span></p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p><span>待完成</span></p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+      <ion-item lines="full" class="no-ripple">
+        <ion-thumbnail slot="start" [routerLink]="['/sing-pages/biz-item']">
+          <img src="assets/img/slide (1).jpg">
+        </ion-thumbnail>
+        <ion-label [routerLink]="['/sing-pages/biz-item']">
+          <ion-label class="headerInner"><h2>Finn</h2>
+            <p>2020/04/08</p></ion-label>
+          <h3>I'm a big deal</h3>
+          <p>Listen, I've had a pretty messed up day...</p>
+        </ion-label>
+
+      </ion-item>
+    </ion-list>
+  </ng-template>
+
+  <ion-row style="background: #fff;margin: 5px 0px 10px 0px;">
+    <ion-col size="12">
+      <ion-text>
+        <h2 style="margin-top: 10px;">服务信息</h2>
+      </ion-text>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol">
+      <ion-item lines="none" class="ionItem">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row style="background: #fff;margin-bottom: 65px;">
+    <ion-col size="12">
+      <ion-item detail lines="none" class="ionItem" style="width: 100%;border: none"
+                (click)="presentModalComments()">
+        <label>
+          <h2 style="margin-top: 10px;">我的评价<span style="margin-left: 20px;font-size: 14px">未评价</span></h2>
+        </label>
+        <label slot="end">
+          <span style="margin-left: 20px;font-size: 14px">去评价</span>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol" size="12">
+      <ion-item lines="none" class="ionItem" style="width: 100%;" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol" size="12">
+      <ion-item lines="none" class="ionItem" style="width: 100%;" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+    <ion-col class="ionCol" size="12">
+      <ion-item lines="none" class="ionItem" style="width: 100%;" (click)="presentModal()">
+        <label>
+          <ion-thumbnail slot="start" class="ionThumbnailCategory">
+            <ion-img src="assets/img/jjmh.png"></ion-img>
+          </ion-thumbnail>
+          <p>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+          </p>
+        </label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <!-- fab placed to the bottom start -->
+  <ion-fab vertical="bottom" slot="fixed" class="ionFab1"
+           style="width: 100%;background: #fff;bottom: 0;border-top: 1px solid #e6e6e6;">
+    <ion-item lines="none" class="no-ripple IonItemBottom">
+      <!--<ion-item slot="start" class="noBorder no-ripple" lines="none" style="padding-left: 10px;">-->
+      <ion-tab-button>
+        <ion-icon name="call-outline"></ion-icon>
+        <ion-label>联系客服</ion-label>
+      </ion-tab-button>
+      <!--</ion-item>-->
+      <ion-tab-button>
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-badge *ngIf="true" color="danger">{{'10'}}</ion-badge>
+        <ion-label>服务车</ion-label>
+      </ion-tab-button>
+      <ion-label>
+        <h2 style="color: red;text-align: center;">￥{{'79.00'}}</h2>
+      </ion-label>
+      <ion-button slot="end" color="danger" style="margin-left: 10px;margin-right: 0px;" class="buttonCheckout">
+        加服务车
+      </ion-button>
+      <ion-button slot="end" color="yellow" style="margin-left: 15px;margin-right: 0px;" class="buttonCheckout">
+        再次购买
+      </ion-button>
+    </ion-item>
+  </ion-fab>
+</ion-content>
