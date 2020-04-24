@@ -27,8 +27,8 @@ export class Tab3Page implements OnInit {
     }
   }
 
-  goToPayment() {
-    this.router.navigate(['payment'], {relativeTo: this.route});
+  goToCheckout() {
+    this.router.navigate(['checkout'], {relativeTo: this.route});
   }
 
   stopPropagation($event) {

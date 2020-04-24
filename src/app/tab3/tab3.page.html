@@ -32,7 +32,7 @@
       </ion-label>
       <ion-item slot="end" class="noBorder quantity no-ripple" lines="none" mode='md' (click)="stopPropagation($event)">
         <ion-label>
-          <h3><ion-icon name="close-outline"></ion-icon></h3>
+          <h3 style="text-align: right"><ion-icon name="trash-outline" style="width: 13px;"></ion-icon></h3>
           <ion-icon name="remove-outline" (click)="decrement()"></ion-icon>
           <!--<ion-input type="number" disabled>{{'1'}}</ion-input>-->
           <p>{{quantity}}</p>
@@ -185,7 +185,7 @@
       <ion-label>
         <h2>合计：￥{{'79.00'}}</h2>
       </ion-label>
-      <ion-button slot="end" color="danger" style="margin-left: 10px;margin-right: 15px;" class="buttonCheckout" (click)="goToPayment()">
+      <ion-button slot="end" color="danger" style="margin-left: 10px;margin-right: 15px;" class="buttonCheckout" (click)="goToCheckout()">
         去结算({{'3'}})
       </ion-button>
     </ion-item>

@@ -1,7 +1,6 @@
 ion-col {
   //padding: 0px 0px;
   background: #fff;
-  padding-bottom: 0;
 }
 
 ion-content {
@@ -21,11 +20,19 @@ ion-list {
   padding: 0;
 }
 
+ion-thumbnail {
+  width: 70px;
+  height: 70px;
+  margin-inline-end: 10px;
+}
+
+
 ion-item {
   --padding-end: 0px;
   --inner-padding-end: 0px;
-  margin: 5px 0px;
+  margin: 5px 0px 0px 0px;
 }
+
 
 .noBorder {
   display: inline-block;
@@ -33,6 +40,34 @@ ion-item {
   --padding-end: 10px;
   --inner-padding-end: 0px;
   margin: 0;
+}
+
+
+.IonItemBottom {
+  --padding-start: 0px;
+  --inner-padding-end: 10px;
+  margin: 0px;
+}
+
+.headerInner {
+
+}
+
+.headerInner h2 {
+  float: left;
+}
+
+.headerInner p {
+  float: right;
+  margin-right: 10px;
+  font-size: 13px
+}
+
+/*========*/
+
+.ionCol {
+  padding: 0;
+  text-align: center;
 }
 
 .ionThumbnailCategory {
@@ -56,8 +91,28 @@ ion-item {
   margin: 0px;
 }
 
-ion-textarea {
-  margin-top: 0px;
-  --padding-top: 0;
-  --padding-bottom: 0;
+.quantity {
+  --padding-end: 10px;
+}
+
+.quantity ion-icon, .quantity ion-input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  --padding-top: 0px;
+  --padding-end: 0px;
+  --padding-bottom: 0px;
+}
+
+.quantity p {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.fixedLabel {
+  min-width: 100px !important;
+  max-width: 100px !important;
 }
