@@ -27,7 +27,9 @@
           <ion-item slot="end" class="noBorder quantity no-ripple" lines="none" mode='md'
                     (click)="stopPropagation($event)">
             <ion-label>
-              <h3 style="text-align: right"><ion-icon name="trash-outline" style="width: 13px;"></ion-icon></h3>
+              <h3 style="text-align: right">
+                <ion-icon name="trash-outline" style="width: 13px;"></ion-icon>
+              </h3>
               <ion-icon name="remove-outline" (click)="decrement()"></ion-icon>
               <p>{{quantity}}</p>
               <ion-icon name="add-outline" (click)="Increment()"></ion-icon>
@@ -44,7 +46,8 @@
           </ion-datetime>
         </ion-item>
         <ion-item lines="none" style="margin-top: 0;--min-height: 0px;">
-          <ion-label slot="start">服务地址：</ion-label>
+          <ion-label fixed class='fixedLabel' slot="start" style="padding: 0;margin: 0;">服务地址：</ion-label>
+          <ion-label (click)="presentModalMap()">点击选择地址</ion-label>
         </ion-item>
       </ng-template>
     </ion-list>

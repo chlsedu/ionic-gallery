@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon slot="start" name="close-outline" (click)="dismiss()" style="font-size: 30px;color: red;"></ion-icon>
+    <!--<ion-title>选择地址</ion-title>-->
+    <div id="r-result" style="margin-left: 20px">
+      地址查询：<input type="text" id="suggestId" size="20" value="" style="width:calc(100% - 100px);"/>
+    </div>
+    <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<baidu-map [options]="opts" (clicked)="mapClick($event)">
+    <marker
+      [point]="marker.point"
+      [options]="marker.options"
+      (loaded)="setAnimation($event)">
+    </marker>
+  </baidu-map>-->
+  <div #mapcon id="map_container" (click)="mapClick($event)"></div><!-- 地图  -->
+
+  <!-- 底部具体的跳转地址-->
+  <div class="map-search" id="map-search">
+    <div class="map_location">
+      <b>[位置]</b>
+      <p class="map_address">{{addressName}}</p>
+    </div>
+    <!--<div class="map_link">
+      <a href="http://map.baidu.com/mobile/webapp/place/linesearch/foo=bar/end=word=陕西中医医院"></a>
+    </div>-->
+  </div>
+</ion-content>

@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'sing-pages',
     loadChildren: () => import('./sing-pages/sing-pages.module').then( m => m.SingPagesPageModule)
+  },
+  {
+    path: 'modal-map',
+    loadChildren: () => import('./components/bizServices/checkout/modal-map/modal-map.module').then( m => m.ModalMapPageModule)
   }
 ];
 @NgModule({

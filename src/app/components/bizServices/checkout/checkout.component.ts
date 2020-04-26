@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {ModalController} from '@ionic/angular';
-import {ModalPage} from '../../../sing-pages/biz-item/modal/modal.page';
 import {ModalCommentsPage} from '../../../sing-pages/biz-item/modal-comments/modal-comments.page';
 import {GlobalConstService} from '../../../services/global-const.service';
+import {ModalMapPage} from './modal-map/modal-map.page';
 
 @Component({
   selector: 'app-checkout',
@@ -65,9 +65,9 @@ export class CheckoutComponent implements OnInit {
     $event.stopPropagation();
   }
 
-  async presentModal() {
+  async presentModalMap() {
     const modal = await this.modalController.create({
-      component: ModalPage,
+      component: ModalMapPage,
       componentProps: {
         'firstName': 'Douglas',
         'lastName': 'Adams',

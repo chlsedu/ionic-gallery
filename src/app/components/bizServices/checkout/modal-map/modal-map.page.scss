@@ -1,0 +1,45 @@
+baidu-map {
+  width: 800px;
+  height: 290px;
+}
+
+#map_container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2px;
+}
+
+.map-search {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0px;
+  background: #fff;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+
+.map_location {
+  width: 100%;
+  float: left;
+  font-size: 1.3rem;
+}
+
+.map_address {
+  padding-top: 0px;
+}
+
+.map_link {
+  width: 20%;
+  float: left;
+  overflow: hidden;
+  text-align: right;
+}
+
+.map_link a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-size: 100% 100%;
+}
