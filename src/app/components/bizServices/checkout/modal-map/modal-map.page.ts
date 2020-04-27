@@ -164,7 +164,7 @@ export class ModalMapPage implements OnInit {
       map.enableDragging(true);
     });
     this.map.addEventListener('click', (e) => {
-      alert(e.point.lng + '' + e.point.lat);
+      // alert(e.point.lng + '' + e.point.lat);
       let pointer = new BMap.Point(e.point.lng, e.point.lat);
       this.marker.setPosition(pointer);
       gc.getLocation(pointer, (r) => {
@@ -229,6 +229,8 @@ export class ModalMapPage implements OnInit {
         });*/
         map.centerAndZoom(pp, 18);
         map.addOverlay(new BMap.Marker(pp));    //添加标注
+        let v = that.element.nativeElement.querySelector('#suggestId')
+        v.blur();
       }
 
       let local = new BMap.LocalSearch(map, { //智能搜索

@@ -1,43 +1,19 @@
 <ion-header>
   <ion-toolbar>
     <ion-icon slot="start" name="close-outline" (click)="dismiss()" style="font-size: 30px;color: red;"></ion-icon>
-    <ion-title>服务评价</ion-title>
+    <ion-title>服务信息</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-row style="background: #fff;margin-bottom: 15px;">
-    <!--<ion-col size="12">
-      <ion-radio-group value="{{bizItem}}">
-        <ion-item *ngFor="let item of bizItems">
-          <ion-label> {{item.name}}</ion-label>
-          &lt;!&ndash;<ion-radio slot="start" color="tertiary" value="{{item.id}}"
-                 (ionBlur)="saveAnswer(item.id)">&ndash;&gt;
-          <ion-radio slot="start" value="{{item.id}}" (ionFocus)="saveRadio(item.id)">
-          </ion-radio>
-        </ion-item>
-      </ion-radio-group>
-    </ion-col>-->
-    <ion-col size="12">
+    <ion-col size="12" style="margin-top: 10px;">
       <label>
-        <h3 class="label-color" style="font-size: inherit;float: left;margin-right: 5px;">评分：</h3>
-        <ion-radio-group value="{{racing}}" style="float: left">
-          <ion-item *ngFor="let item of races" lines="none" style="float: left;--padding-start: 0px">
-            <ion-label> {{item.name}}</ion-label>
-            <ion-radio slot="start" value="{{item.id}}" (ionFocus)="saveRaceRadio(item.id)" mode="md"
-                       style="margin-inline-end: 10px;">
-            </ion-radio>
-          </ion-item>
-        </ion-radio-group>
-      </label>
-    </ion-col>
-    <ion-col size="12">
-      <label>
-        <h3 class="label-color" style="font-size: inherit;float: left;margin-right: 5px;margin-top:0px">添加评论：</h3>
+        <h3 class="label-color" style="font-size: inherit;float: left;margin-right: 5px;margin-top:0px">添加信息：</h3>
         <ion-textarea autoGrow="true" placeholder="点击添加评论" rows=“6” cols=“10”
-                      style="float: left;width: calc(100% - 100px);" ></ion-textarea>
-                      <!--style="float: left;width: calc(100% - 100px);" [(ngModel)]="msg" ></ion-textarea>-->
+                      style="float: left;width: calc(100% - 100px);"></ion-textarea>
+        <!--style="float: left;width: calc(100% - 100px);" [(ngModel)]="msg" ></ion-textarea>-->
       </label>
     </ion-col>
     <ion-col size="12">
@@ -65,7 +41,8 @@
     <ion-col size="12">
       <ion-item lines="none" class="ionItem" style="width: 100%;border: none;--min-height: 0px;">
         <label>
-          <h3 style="font-size: inherit;margin: 0px;">我的评价<span style="margin-left: 20px;font-size: 14px">未评价</span><span style="margin-left: 20px;font-size: 14px">(向左滑动，可编辑和删除)</span>
+          <h3 style="font-size: inherit;margin: 0px;">服务信息<span
+            style="margin-left: 20px;font-size: 14px">无信息</span><span style="margin-left: 20px;font-size: 14px">(向左滑动，可编辑和删除)</span>
           </h3>
         </label>
       </ion-item>

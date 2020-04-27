@@ -10,6 +10,7 @@ import {OrderItemPage} from './order-item.page';
 import {ModalPageModule} from '../../biz-item/modal/modal.module';
 import {ModalCommentsPage} from '../../biz-item/modal-comments/modal-comments.page';
 import {ModalCommentsPageModule} from '../../biz-item/modal-comments/modal-comments.module';
+import {ModalMapPageModule} from '../../../components/bizServices/checkout/modal-map/modal-map.module';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import {ModalCommentsPageModule} from '../../biz-item/modal-comments/modal-comme
     IonicModule,
     ModalPageModule,
     ModalCommentsPageModule,
+    ModalMapPageModule,
     OrderItemPageRoutingModule
   ],
   declarations: [OrderItemPage]
