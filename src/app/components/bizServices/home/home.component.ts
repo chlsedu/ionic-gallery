@@ -9,35 +9,35 @@ import {IonInfiniteScroll} from '@ionic/angular';
 export class HomeComponent implements OnInit {
   @ViewChild(IonInfiniteScroll, {static: false}) infiniteScroll: IonInfiniteScroll;
   imgData = [{
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }, {
-    src: 'assets/img/slogo.jpg'
+    src: 'assets/img/itemThumbnail.png'
   }];
 
   constructor() {
