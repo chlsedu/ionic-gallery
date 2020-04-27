@@ -65,6 +65,11 @@ export class CheckoutComponent implements OnInit {
     $event.stopPropagation();
   }
 
+  deleteItem($event) {
+    $event.stopPropagation();
+    alert('delete item!');
+  }
+
   async presentModalMap() {
     const modal = await this.modalController.create({
       component: ModalMapPage,

@@ -28,7 +28,8 @@
                     (click)="stopPropagation($event)">
             <ion-label>
               <h3 style="text-align: right">
-                <ion-icon class="label-color" name="trash-outline" style="width: 13px;"></ion-icon>
+                <ion-icon class="label-color" name="trash-outline" style="width: 13px;"
+                          (click)="deleteItem($event)"></ion-icon>
               </h3>
               <ion-icon name="remove-outline" (click)="decrement()"></ion-icon>
               <p>{{quantity}}</p>

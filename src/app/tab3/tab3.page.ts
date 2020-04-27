@@ -31,6 +31,11 @@ export class Tab3Page implements OnInit {
     this.router.navigate(['checkout'], {relativeTo: this.route});
   }
 
+  deleteItem($event) {
+    $event.stopPropagation();
+    alert('delete item!');
+  }
+
   stopPropagation($event) {
     $event.stopPropagation();
   }
