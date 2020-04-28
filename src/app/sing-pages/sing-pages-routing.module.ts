@@ -33,6 +33,10 @@ const routes: Routes = [
     path: 'services',
     loadChildren: () => import('./services/services.module').then( m => m.ServicesPageModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 

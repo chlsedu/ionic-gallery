@@ -45,7 +45,10 @@
         <h3 class="label-color"
           style="font-size: inherit;float: left;margin-right: 5px;margin-top:0px;margin-bottom: 0px;line-height: 40px;">
           添加图片：</h3>
-        <ion-icon name="camera" (click)="photoService.addNewToGallery()" style="font-size: 40px"
+        <ion-icon name="camera" (click)="photoService.addNewToGallery(cameraSource.Camera)" style="font-size: 40px"
+                  color="primary"></ion-icon>
+        <ion-icon name="add" (click)="photoService.addNewToGallery(cameraSource.Photos)"
+                  style="margin-left: 15px;font-size: 40px"
                   color="primary"></ion-icon>
         <ion-button (click)="save()" size="small" style="font-size: 14px;float: right"
                     color="primary">
@@ -55,7 +58,6 @@
       </label>
     </ion-col>
     <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-      &lt;!&ndash;<ion-img src="{{ photo.webviewPath }}"></ion-img>&ndash;&gt;
       <ion-img src="{{ photo.base64? photo.base64 : photo.webviewPath }}"></ion-img>
       <ion-input [placeholder]="'图片注释'"></ion-input>
     </ion-col>

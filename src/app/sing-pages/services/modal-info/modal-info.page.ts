@@ -2,6 +2,7 @@ import {Component, ElementRef, Input, OnInit} from '@angular/core';
 import {ModalController, NavParams} from '@ionic/angular';
 import {PhotoService} from '../../../services/photo.service';
 import {ModalPage} from '../../biz-item/modal/modal.page';
+import {CameraSource} from '@capacitor/core';
 
 @Component({
   selector: 'app-modal-info',
@@ -14,9 +15,11 @@ export class ModalInfoPage implements OnInit {
   @Input() lastName: string;
   @Input() middleInitial: string;
   msg = 'qweqweqweqweqwe';
+  private cameraSource: any;
 
   constructor(navParams: NavParams, public modalController: ModalController, public photoService: PhotoService, public element: ElementRef) {
     // componentProps can also be accessed at construction time using NavParams
+    this.cameraSource = CameraSource;
     console.log(navParams.get('firstName'));
   }
 

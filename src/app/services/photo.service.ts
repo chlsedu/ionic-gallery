@@ -89,11 +89,11 @@ export class PhotoService {
     }
   }
 
-  public async addNewToGallery() {
+  public async addNewToGallery(crs:CameraSource) {
     // Take a photo
     const capturedPhoto = await Camera.getPhoto({
       resultType: CameraResultType.Uri,
-      source: CameraSource.Camera,
+      source: crs,
       quality: 100
     }).catch(ex => {
       this.presentToast(ex);

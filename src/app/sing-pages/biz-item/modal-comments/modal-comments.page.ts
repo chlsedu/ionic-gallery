@@ -2,6 +2,7 @@ import {Component, ElementRef, Input, OnInit} from '@angular/core';
 import {ModalController, NavParams} from '@ionic/angular';
 import {ModalPage} from '../modal/modal.page';
 import {PhotoService} from '../../../services/photo.service';
+import {CameraSource} from '@capacitor/core';
 
 @Component({
   selector: 'app-modal-comments',
@@ -13,6 +14,7 @@ export class ModalCommentsPage implements OnInit {
   @Input() firstName: string;
   @Input() lastName: string;
   @Input() middleInitial: string;
+  private cameraSource: any;
   bizItem = 1;
   racing = 5;
   bizItems = [{
@@ -42,6 +44,7 @@ export class ModalCommentsPage implements OnInit {
 
   constructor(navParams: NavParams, public modalController: ModalController, public photoService: PhotoService, public element: ElementRef) {
     // componentProps can also be accessed at construction time using NavParams
+    this.cameraSource = CameraSource;
     console.log(navParams.get('firstName'));
   }
 
